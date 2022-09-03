@@ -16,8 +16,8 @@ class PictureList extends Component{
                     numColumns={3}
                     data={props.list}
                     keyExtractor={keyExtractor}
-                    renderItem={({item}) => {<PictureListItem onClick={props.onClick} item={item} />
-                    }}
+                    renderItem={({item}) => <PictureListItem onClick={props.onClick} item={item} />
+                    }
                 />
             </View>
         );
@@ -41,4 +41,4 @@ function PictureListItem(props) {
     );
 }
 
-export default PictureList
+export default PictureList;

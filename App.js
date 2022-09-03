@@ -41,7 +41,7 @@ export default class App extends Component{
         </View>
         <CameraDialog isOpen={state.isModalOpen} />
       </View>
-    )
+    );
   }
 }
 
