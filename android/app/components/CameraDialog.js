@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import { StyleSheet, View, Image, Modal, TouchableHighlight, Text, Button, TouchableOpacity } from "react-native";
+import { StyleSheet, View, Image, Modal, Text, Button, TouchableOpacity } from "react-native";
 
-class CameraDialogo extends Component{
+class CameraDialog extends Component{
 
     static defaultProps = {
         isOpen: false
@@ -10,6 +10,7 @@ class CameraDialogo extends Component{
         currentImage: 'https://avatars.githubusercontent.com/u/93402520?v=4'
     }
     render() {
+        const {props, state} = this;
         return (
             <Modal 
                 animationType="slide"
@@ -48,4 +49,4 @@ class CameraDialogo extends Component{
     }
 }
 
-export default CameraDialogo;
+export default CameraDialog;

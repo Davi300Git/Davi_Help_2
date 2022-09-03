@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import { Platform, StyleSheet, Text, View, Button } from 'react-native';
 
 import PictureList from './android/app/components/PictureList';
-import CameraDialogo from './android/app/components/CameraDialog';
+import CameraDialog from './android/app/components/CameraDialog';
 
 export default class App extends Component{
 
@@ -39,7 +39,7 @@ export default class App extends Component{
             color="#0062ac"
           />
         </View>
-        <CameraDialogo isOpen={state.isModalOpen} />
+        <CameraDialog isOpen={state.isModalOpen} />
       </View>
     )
   }
