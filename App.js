@@ -17,16 +17,15 @@ export default class App extends Component{
     ],
     isModalOpen: false
   }
-
   onPictureSelect = (item) =>{
 
   }
-
   openModal = () => {
-
+    this.setState({isModalOpen: true});
   }
-
-
+  closeModal = (reponse) => {
+    this.setState({isModalOpen: false});
+  }
   render() {
     const {state} = this;
     return (
@@ -39,7 +38,7 @@ export default class App extends Component{
             color="#0062ac"
           />
         </View>
-        <CameraDialog isOpen={state.isModalOpen} />
+        <CameraDialog isOpen={state.isModalOpen} onClose={this.closeModal}/>
       </View>
     );
   }
